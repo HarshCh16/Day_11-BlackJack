@@ -64,11 +64,11 @@ def blackjack_check():
     elif sum(user_hand) > 21 or sum(dealer_hand) > 21:
         final_score_update()
         if sum(user_hand) > sum(dealer_hand):
-            print("You overwent, Dealer won.")
+            print("You got busted, Dealer won.")
         elif sum(user_hand) < sum(dealer_hand):
-                print("The Dealer overwent. You Won!")
+                print("The Dealer got busted. You Won!")
         if sum(user_hand) > 21 and sum(dealer_hand) > 21:
-            print("You both overwent. Its a draw")
+            print("You both got busted. Its a draw")
         return True
 
     else :
